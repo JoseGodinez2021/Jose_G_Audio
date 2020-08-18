@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Jose_G_AudioApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rick.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="FjM-hH-j3X">
+                                <rect key="frame" x="79" y="118" width="240" height="267"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ecd-RX-xY0">
+                                <rect key="frame" x="0.0" y="791" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="EH9-Rp-G5F">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kGe-B4-qJZ">
+                                            <rect key="frame" x="20" y="7" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Play"/>
+                                            <connections>
+                                                <action selector="playAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YxA-6T-rjn"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="T11-Kv-eBK"/>
+                                    <barButtonItem style="plain" id="9gq-9I-J1s">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mHj-f7-pSF">
+                                            <rect key="frame" x="119.5" y="7" width="194" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Pause"/>
+                                            <connections>
+                                                <action selector="pauseAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sgl-qf-OIw"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="XYf-2O-vjv">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HPE-bN-K84">
+                                            <rect key="frame" x="313.5" y="7" width="31" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="stop"/>
+                                            <connections>
+                                                <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i1t-Jb-FgX"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7hB-rc-U5V"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ecd-RX-xY0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1Ve-rQ-dHe"/>
+                            <constraint firstItem="FjM-hH-j3X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="8LC-Yg-U6Y"/>
+                            <constraint firstItem="Ecd-RX-xY0" firstAttribute="top" secondItem="FjM-hH-j3X" secondAttribute="bottom" constant="400" id="97g-iF-AbG"/>
+                            <constraint firstItem="Ecd-RX-xY0" firstAttribute="top" secondItem="FjM-hH-j3X" secondAttribute="bottom" constant="406" id="BRy-Ar-4ti"/>
+                            <constraint firstItem="Ecd-RX-xY0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Nno-Qs-7yJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ecd-RX-xY0" secondAttribute="bottom" constant="27" id="Yik-uZ-hl0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ecd-RX-xY0" secondAttribute="bottom" constant="27" id="bzH-65-pJ8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FjM-hH-j3X" secondAttribute="trailing" constant="95" id="deR-hZ-fP7"/>
+                            <constraint firstItem="Ecd-RX-xY0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iFn-OW-KfX"/>
+                            <constraint firstItem="FjM-hH-j3X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="iGt-n9-uVu"/>
+                            <constraint firstItem="Ecd-RX-xY0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w4w-0y-cVt"/>
+                            <constraint firstItem="Ecd-RX-xY0" firstAttribute="top" secondItem="FjM-hH-j3X" secondAttribute="bottom" constant="406" id="yEi-bB-Oa2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rick.jpeg" width="474" height="267"/>
+    </resources>
+</document>
